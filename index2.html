@@ -1,5 +1,16 @@
 ﻿<HTML>
 <HEAD>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
+    <script>
+		  var OneSignal = window.OneSignal || [];
+		  OneSignal.push(["init", {
+		      appId: "4de8b4d8-ac26-4bd5-ad69-6deab8e3ba5c",
+			autoRegister: true, /* Set to true to automatically prompt visitors */
+			notifyButton: {
+				enable: true /* Set to false to hide */
+			}
+		  }]);
+    </script>
     <TITLE>TTS</TITLE>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1">
