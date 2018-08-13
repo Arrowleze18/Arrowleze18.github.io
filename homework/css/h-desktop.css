@@ -1,0 +1,205 @@
+@media screen and (min-width:1200px)
+{
+/*GLOBAL*/
+.fixed-width
+{
+    width: 1200px;
+    margin: auto;
+}
+.middle-width
+{
+    width: 800px;
+    margin: auto;
+}
+.btn
+{
+    border: rgb(139, 120, 98) 1px solid;
+    color: rgb(139, 120, 98);
+    padding: 8px 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+.col-1
+{ width: calc(100% / 12 * 1) ; }
+.col-2
+{ width: calc(100% / 12 * 2) ; }
+.col-3
+{ width: calc(100% / 12 * 3) ; }
+.col-4
+{ width: calc(100% / 12 * 4) ; }
+.col-5
+{ width: calc(100% / 12 * 5) ; }
+.col-6
+{ width: calc(100% / 12 * 6) ; }
+.col-7
+{ width: calc(100% / 12 * 7) ; }
+.col-8
+{ width: calc(100% / 12 * 8) ; }
+.col-9
+{ width: calc(100% / 12 * 9) ; }
+.col-10
+{ width: calc(100% / 12 * 10) ; }
+.col-11
+{ width: calc(100% / 12 * 11) ; }
+.col-12
+{ width: calc(100% / 12 * 12) ; }
+[class*="col"] 
+{
+    float: left;
+    padding: 15px;
+}
+
+/*NAV*/
+nav
+{
+    background-color: rgb(237, 235, 232);
+    height: 90px;
+    line-height: 55px;
+}
+nav .logo
+{
+    font-weight: bold;
+    font-size: 18px;
+}
+nav a
+{
+    text-decoration: none;
+    color: rgb(139, 120, 98);
+}
+nav li
+{
+    float: left;
+    padding: 0 10px;
+}
+nav .icons a
+{
+    float: right;
+    padding: 0 15px;
+}
+
+/*HEADER*/
+header
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+header h1
+{
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+header .info
+{
+    float: right;
+}
+
+/*PICS*/
+#pics
+{
+    padding-bottom: 100px;
+}
+
+/*ABOUT*/
+#about
+{
+    background-color: rgb(242, 242, 242);
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+#about h2
+{
+    text-align: center;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+}
+#about h5
+{
+    color: rgb(80, 80, 80);
+    padding-bottom: 20px;
+}
+#about h3
+{
+    padding-bottom: 20px;
+}
+#about p
+{
+    color: rgb(80, 80, 80);
+    padding-bottom: 30px;
+    line-height: 25px;
+}
+#about .link-icons
+{
+    padding-top: 20px;
+}
+#about .link-icons li
+{
+    float: left;
+    padding-right: 15px;
+}
+#about .link-icons a
+{
+    color: rgb(202, 188, 172);
+}
+
+/*START*/
+#start
+{
+    background-color: rgb(202, 188, 172);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#start h2
+{
+    text-align: center;
+    color: rgb(139, 120, 98);
+}
+#start p
+{
+    text-align: center;
+    color: rgb(139, 120, 98);
+    padding-bottom: 30px;
+    line-height: 25px;
+}
+#start .btn
+{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px 60px;
+    border: rgb(139, 120, 98) 2px solid;
+    margin-left: 30%;
+}
+
+/*FOOTER*/
+footer
+{
+    background-color: rgb(237, 235, 232);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+footer p,span
+{
+    color: rgb(80, 80, 80);
+    padding-bottom: 5px;
+}
+footer .data
+{
+    color: rgb(139, 120, 98);
+}
+footer ul
+{
+    padding-top: 20px;
+    margin-left: 45%;
+}
+footer li
+{
+    float: left;
+}
+footer a
+{
+    text-align: center;
+    color: rgb(139, 120, 98);
+    padding: 10px 10px;
+}
+}
