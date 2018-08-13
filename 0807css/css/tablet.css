@@ -1,0 +1,230 @@
+@media screen and (min-width:600px) and (max-width:1200px) {
+    /*GLOBAL*/
+    .fixed-width {
+        width: 100%;
+        margin: auto;
+    }
+    .btn {
+        border: rgb(139, 120, 98) 1px solid;
+        color: rgb(139, 120, 98);
+        padding: 8px 15px;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .col-1 {
+        width: calc(100% / 12 * 1);
+    }
+    .col-2 {
+        width: calc(100% / 12 * 2);
+    }
+    .col-3 {
+        width: calc(100% / 12 * 3);
+    }
+    .col-4 {
+        width: calc(100% / 12 * 4);
+    }
+    .col-5 {
+        width: calc(100% / 12 * 5);
+    }
+    .col-6 {
+        width: calc(100% / 12 * 6);
+    }
+    .col-7 {
+        width: calc(100% / 12 * 7);
+    }
+    .col-8 {
+        width: calc(100% / 12 * 8);
+    }
+    .col-9 {
+        width: calc(100% / 12 * 9);
+    }
+    .col-10 {
+        width: calc(100% / 12 * 10);
+    }
+    .col-11 {
+        width: calc(100% / 12 * 11);
+    }
+    .col-12 {
+        width: calc(100% / 12 * 12);
+    }
+    [class*="col"] {
+        float: left;
+        padding: 50px;
+    }
+    body {
+        background-color: #1C1C1C;
+        width: 100%;
+        /* background-image: url(../images/allbg.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    }
+    /*NAV*/
+    nav {
+        width: 100%;
+        line-height: 20px;
+        position: absolute;
+    }
+    nav .logo {
+        height: 80px;
+        width: auto;
+        float: left;
+        padding: 20px;
+    }
+    nav a {
+        text-decoration: none;
+        color: cornsilk;
+    }
+    nav li {
+        float: right;
+        padding: 30px 15px;
+    }
+    nav .menu {
+        float: right;
+        padding: 30px 20px;
+    }
+    /*HEADER*/
+    header {
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-image: url(../images/wood_cabinetshelf.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    header .header-logo {
+        width: 250px;
+    }
+    /*STORY*/
+    #story
+    {
+        width: 100%;
+        height: 440px;
+    }
+    #story .col-5 {
+        padding: 80px 50px;
+        margin: auto;
+        text-align: center;
+        line-height: 30px;
+        color: #BDC0BA;
+        height: 440px;
+    }
+    #story h4 {
+        color: #1B813E;
+    }
+    #story .line {
+        color: #1B813E;
+    }
+    #story .col-7 {
+        height: 440px;
+        /* display: table; */
+    }
+    #story .col-7 img {
+        /* display: table-cell;
+        text-align: center;
+        vertical-align: middle; */
+        width: 100%;
+        height: 440px;
+    }
+    /*FARE*/
+    #fare {
+        width: 100%;
+        height: 500px;
+    }
+    #fare .col-8 {
+        height: 500px;
+    }
+    #fare .col-8 img {
+        width: 100%;
+        height: 500px;
+    }
+    #fare .col-4 {
+        padding-top: 50px;
+        padding-bottom: 80px;
+        margin: auto;
+        text-align: center;
+        line-height: 20px;
+        color: #BDC0BA;
+    }
+    #fare .col-4 img {
+        width: 80px;
+    }
+    #fare .col-4 h4,
+    .line {
+        color: #1B813E;
+    }
+    /*LOCAL*/
+    #local
+    {
+        width: 100%;
+    }
+    #local .col-5 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        margin: auto;
+        text-align: center;
+        line-height: 20px;
+        color: #BDC0BA;
+    }
+    #local .col-5 img {
+        width: 80px;
+    }
+    #local h4 {
+        color: #1B813E;
+    }
+    #local .line {
+        color: #1B813E;
+    }
+    #local .col-7 {
+        height: 480px;
+    }
+    #local .col-7 img {
+        width: 100%;
+        height: 480px;
+    }
+    /*FULL-PIC*/
+    #full-pic {
+        background-image: url(../images/獻祭\ 劇情.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+    }
+    /*FOOTER*/
+    footer
+    {
+        width: 100%;
+    }
+    footer .line {
+        color: #1B813E;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+    footer p {
+        color: #BDC0BA;
+        font-size: 20px;
+    }
+    footer .phone {
+        color: #BDC0BA;
+        padding-top: 30px;
+    }
+    footer ul
+    {
+        margin-right: 50px;
+    }
+    footer li {
+        float: right;
+        padding-right: 10px;
+        padding-top: 250px;
+    }
+    footer a {
+        color: #1B813E;
+    }
+}

@@ -1,0 +1,272 @@
+/*NAV*/
+body
+{
+    width: 100%;
+}
+nav
+{
+    background-color: #1C1C1C;
+}
+nav .row
+{
+    margin: 0;
+}
+nav .logo
+{
+    float: left;
+    padding-top: 30px;
+    width: auto;
+}
+nav .menu
+{
+    padding: 20px 0;
+    float: right;
+    width: auto;
+}
+nav .menu a
+{
+    color: #86C166;
+    font-size: 20px;
+}
+
+/*HEADER*/
+header
+{
+    background-color: #1C1C1C;
+    width: 100%;
+    height: 600px;
+}
+header .row
+{
+    width:100%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding-top: 100px;
+}
+header img
+{
+    width: 300px;
+}
+
+/*STORY*/
+#story
+{
+    text-align: center;
+    color: rgb(233, 233, 233);
+    height: 520px;
+    width: 100%;
+}
+#story .row
+{
+    margin: 0;
+}
+#story .col-5 .jumbotron
+{
+    background-color: #373C38;
+    height: 520px;
+    padding: 80px 30px;
+}
+#story .col-12
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#story .col-12 .dear1
+{
+    width: 100%;
+    float: left;
+    padding: 20px 10px;
+}
+#story .col-12 .dear2
+{
+    width: 100%;
+    float: left;
+    padding: 10px 10px;
+}
+#story .col-12 .dear3
+{
+    width: 100%;
+    float: left;
+    padding: 20px 10px;
+}
+#story .greenline
+{
+    padding-bottom: 20px;
+    color: #86C166;
+}
+#story .lead2
+{
+    padding-top: 20px;
+}
+#story .col-7
+{
+    background-color: #08192D;
+    position: 0;
+    width: 100%;
+    height: 520px;
+}
+#story .col-7 img
+{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*NEW*/
+#new
+{
+    width: 100%;
+    text-align: center;
+    color: rgb(233, 233, 233);
+    height: 520px;
+}
+#new .row
+{
+    margin: 0;
+}
+#new .col-4 .jumbotron
+{
+    background-color: #373C38;
+    height: 520px;
+    padding: 80px 30px;
+}
+#new .col-12
+{
+    padding-bottom: 30px;
+    width: 150px;
+    margin: auto;
+}
+#new .greenline
+{
+    padding-bottom: 20px;
+    color: #86C166;
+}
+#new .lead2
+{
+    padding-top: 20px;
+}
+#new .col-8
+{
+    background-color: rgb(224,109,95);
+    position: 0;
+    width: 100%;
+    height: 520px;
+}
+#new .col-8 img
+{
+    width: 480px;
+    height: 480px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*GREEN*/
+#green
+{
+    text-align: center;
+    color: rgb(233, 233, 233);
+    height: 520px;
+    width: 100%;
+}
+#green .row
+{
+    margin: 0;
+}
+#green .col-5 .jumbotron
+{
+    background-color: #373C38;
+    height: 520px;
+    padding: 80px 30px;
+}
+#green .col-12
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 150px;
+    margin: auto;
+}
+#green .greenline
+{
+    padding-bottom: 20px;
+    color: #86C166;
+}
+#green .lead2
+{
+    padding-top: 20px;
+}
+#green .col-7
+{
+    background-color: rgb(63, 128, 79);
+    position: 0;
+    width: 100%;
+    height: 520px;
+}
+#green .col-7 img
+{
+    width: 480px;
+    height: 480px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*FULLPIC*/
+#fullpic
+{
+    background-image: 
+    linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.2)),
+    url(../images/20180612_十二月\ 終月.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+/*FOOTER*/
+footer
+{
+    text-align: center;
+    background-color: #1C1C1C;
+    color: rgb(233, 233, 233);
+}
+footer .row
+{
+    margin: 0;
+}
+footer .col-3
+{
+    padding: 50px;
+    float: left;
+}
+footer .logo
+{
+    width: auto;
+}
+footer .greenline
+{
+    color: #86C166;
+    padding-bottom: 30px;
+}
+footer .phone
+{
+    padding-top: 30px;
+}
+footer .col-9
+{
+    float: left;
+    padding-top: 270px;
+}
+footer .icon
+{
+    float: right;
+}
+footer li
+{
+    float: right;
+    padding: 0 7px;
+}
+footer a
+{
+    color: #86C166;
+}

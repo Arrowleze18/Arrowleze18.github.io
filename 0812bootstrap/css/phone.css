@@ -1,0 +1,215 @@
+@media screen and (max-width:540px) {
+    /*NAV*/
+    h2 {
+        font-size: 20px;
+    }
+    body {
+        width: 100%;
+    }
+    nav {
+        background-color: #1C1C1C;
+    }
+    nav .row {
+        margin: 0;
+    }
+    nav .col-sm-2 .logo {
+        float: left;
+        padding-top: 30px;
+        width: auto;
+    }
+    nav .col-sm-10 .menu {
+        padding: 20px 0;
+        float: right;
+        width: auto;
+    }
+    nav .col-sm-10 .menu a {
+        color: #86C166;
+    }
+    /*HEADER*/
+    header {
+        background-color: #1C1C1C;
+        width: 100%;
+        height: 500px;
+    }
+    header .row {
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-align: center;
+        padding-top: 100px;
+    }
+    header img {
+        width: auto;
+    }
+    /*STORY*/
+    #story {
+        text-align: center;
+        color: rgb(233, 233, 233);
+        height: 520px;
+        width: 100%;
+    }
+    #story .row {
+        margin: 0;
+    }
+    #story .col-5 .jumbotron {
+        background-color: #373C38;
+        height: 520px;
+        /* padding: 80px 30px; */
+    }
+    #story .col-12 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #story .col-12 .dear1 {
+        width: 100%;
+        float: left;
+        padding: 20px 10px;
+    }
+    #story .col-12 .dear2 {
+        width: 100%;
+        float: left;
+        padding: 10px 10px;
+    }
+    #story .col-12 .dear3 {
+        width: 100%;
+        float: left;
+        padding: 20px 10px;
+    }
+    #story .greenline {
+        padding-bottom: 20px;
+        color: #86C166;
+    }
+    #story .lead2 {
+        padding-top: 20px;
+    }
+    #story .col-7 {
+        background-color: #08192D;
+        position: 0;
+        width: 100%;
+        height: 520px;
+    }
+    #story .col-7 img {
+        width: auto;
+        height: 520px;
+    }
+    /*NEW*/
+    #new {
+        width: 100%;
+        text-align: center;
+        color: rgb(233, 233, 233);
+        height: 520px;
+    }
+    #new .row {
+        margin: 0;
+    }
+    #new .col-4 .jumbotron {
+        background-color: #373C38;
+        height: 520px;
+        padding: 80px 30px;
+    }
+    #new .col-12 {
+        padding-bottom: 30px;
+        width: 150px;
+        margin: auto;
+    }
+    #new .greenline {
+        padding-bottom: 20px;
+        color: #86C166;
+    }
+    #new .lead2 {
+        padding-top: 20px;
+    }
+    #new .col-8 {
+        background-color: rgb(224, 109, 95);
+        position: 0;
+        width: 100%;
+        height: 520px;
+    }
+    #new .col-8 img {
+        width: auto;
+        height: 520px;
+    }
+    /*GREEN*/
+    #green {
+        text-align: center;
+        color: rgb(233, 233, 233);
+        height: 520px;
+        width: 100%;
+    }
+    #green .row {
+        margin: 0;
+    }
+    #green .col-5 .jumbotron {
+        background-color: #373C38;
+        height: 520px;
+        padding: 80px 30px;
+    }
+    #green .col-12 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 150px;
+        margin: auto;
+    }
+    #green .greenline {
+        padding-bottom: 20px;
+        color: #86C166;
+    }
+    #green .lead2 {
+        padding-top: 20px;
+    }
+    #green .col-7 {
+        background-color: rgb(63, 128, 79);
+        position: 0;
+        width: 100%;
+        height: 520px;
+    }
+    #green .col-7 img {
+        width: auto;
+        height: 520px;
+    }
+    /*FULLPIC*/
+    #fullpic {
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .2)), url(../images/舞動人偶\ 素材圖-書櫃與劍.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 800px;
+    }
+    /*FOOTER*/
+    footer {
+        text-align: center;
+        background-color: #1C1C1C;
+        color: rgb(233, 233, 233);
+    }
+    footer .row {
+        margin: 0;
+    }
+    footer .col-3 {
+        padding: 50px;
+        float: left;
+    }
+    footer .logo {
+        width: auto;
+    }
+    footer .greenline {
+        color: #86C166;
+        padding-bottom: 30px;
+    }
+    footer .phone {
+        padding-top: 30px;
+    }
+    footer .col-9 {
+        float: left;
+        padding-top: 270px;
+    }
+    footer .icon {
+        float: right;
+    }
+    footer li {
+        float: right;
+        padding: 0 7px;
+    }
+    footer a {
+        color: #86C166;
+    }
+}
