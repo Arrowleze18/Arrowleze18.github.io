@@ -1,6 +1,6 @@
-@media screen and (min-width:1200px) {
+@media screen and (min-width:600px) and (max-width:1200px) {
     .fixed-width {
-        width: 1000px;
+        width: 800px;
         background-color: #373C38;
         margin: auto;
     }
