@@ -1,10 +1,86 @@
-body
-{
+.fixed-width {
+    width: 1000px;
+    margin: auto;
+}
+
+.col-1 {
+    width: calc(100% / 12 * 1);
+}
+
+.col-2 {
+    width: calc(100% / 12 * 2);
+}
+
+.col-3 {
+    width: calc(100% / 12 * 3);
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4);
+}
+
+.col-5 {
+    width: calc(100% / 12 * 5);
+}
+
+.col-6 {
+    width: calc(100% / 12 * 6);
+}
+
+.col-7 {
+    width: calc(100% / 12 * 7);
+}
+
+.col-8 {
+    width: calc(100% / 12 * 8);
+}
+
+.col-9 {
+    width: calc(100% / 12 * 9);
+}
+
+.col-10 {
+    width: calc(100% / 12 * 10);
+}
+
+.col-11 {
+    width: calc(100% / 12 * 11);
+}
+
+.col-12 {
+    width: calc(100% / 12 * 12);
+}
+
+[class*="col"] {
+    float: left;
+    padding: 50px;
+}
+
+body {
     background-color: #4A593D;
     color: rgb(233, 233, 233);
     padding: 50px;
+    text-align: center;
+    margin: auto;
+    background-image: url(../images/bgpattern.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-body a
+
+body a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4A593D;
+    text-decoration: none;
+}
+
+/*WEB*/
+#web h1
 {
-    color: #86C166;
+    padding-bottom: 20px;
+}
+#web .col-6
+{
+    border: #86C166 1px dashed;
+    border-radius: 5px;
 }
