@@ -80,6 +80,18 @@
         font-size: 14px;
     }
     /*POCS*/
+    .gallery
+    {
+        margin: auto;
+        width: 500px;
+    }
+    #pics #big
+    {
+        border: #00AA90 1px solid;
+        width: 500px;
+        padding: 5px;
+        height: auto;
+    }
     #pics {
         margin: auto;
     }
@@ -94,6 +106,12 @@
         border: #00AA90 1px solid;
         width: 250px;
         padding: 5px;
+    }
+    #pisc .zoom
+    {
+        transition: all .6s;
+        margin: auto;
+        width: 500px;
     }
     /*FOOTER*/
     footer .fixed-width {

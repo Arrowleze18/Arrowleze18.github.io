@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Card</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let img = document.querySelectorAll(".zoom");
+            $("img").click(function () {
+                console.log("img");
+                img.forEach(function (d) {
+                    d.addEventListener("click", function () {
+                        console.log(this.dataset.img);
+                        let big = document.getElementById("big");
+                        big.src = "images/" + this.dataset.img;
+                    });
+                });
+            });
+        });
+    </script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
@@ -51,38 +67,45 @@
     </nav>
     <div id="pics">
         <div class="full-width">
+            <div class="fixed-width">
+                <div class="col-12">
+                    <div class="gallery">
+                        <img src="images/2014聖誕節.jpg" alt="pic1" id="big">
+                    </div>
+                </div>
+            </div>
             <div class="fixed-width clearfix">
                 <div class="col-12">
                     <div class="col-4 long">
-                        <img src="images/2014聖誕節.jpg" alt="2014xmas">
+                        <img class="zoom" src="images/2014聖誕節.jpg" alt="2014xmas" data-img="2014聖誕節.jpg">
                     </div>
                     <div class="col-4 long">
-                        <img src="images/2015聖誕節.png" alt="2015xmas">
+                        <img class="zoom" src="images/2015聖誕節.png" alt="2015xmas" data-img="2015聖誕節.png">
                     </div>
                     <div class="col-4 long">
-                        <img src="images/2016 christmas02.png" alt="2016xmas">
+                        <img class="zoom" src="images/2016 christmas02.png" alt="2016xmas" data-img="2016 christmas02.png">
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="col-4">
-                        <img src="images/2017中秋節.jpg" alt="2017middlemoon">
+                        <img class="zoom" src="images/2017中秋節.jpg" alt="2017middlemoon" data-img="2017中秋節.jpg">
                     </div>
                     <div class="col-4">
-                        <img src="images/2017聖誕節卡片CLIP-PNG.png" alt="2017xmas">
+                        <img class="zoom" src="images/2017聖誕節卡片CLIP-PNG.png" alt="2017xmas" data-img="2017聖誕節卡片CLIP-PNG.png">
                     </div>
                     <div class="col-4">
-                        <img src="images/2017萬聖節(2018製).png" alt="2018holloween">
+                        <img class="zoom" src="images/2017萬聖節(2018製).png" alt="2018holloween" data-img="2017萬聖節(2018製).png">
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="col-4">
-                        <img src="images/2018情人節.png" alt="2018valentine">
+                        <img class="zoom" src="images/2018情人節.png" alt="2018valentine" data-img="2018情人節.png">
                     </div>
                     <div class="col-4">
-                        <img src="images/2018新年賀卡.png" alt="2018new">
+                        <img class="zoom" src="images/2018新年賀卡.png" alt="2018new" data-img="2018新年賀卡.png">
                     </div>
                     <div class="col-4">
-                        <img src="images/2018端午節.png" alt="2018green">
+                        <img class="zoom" src="images/2018端午節.png" alt="2018green" data-img="2018端午節.png">
                     </div>
                 </div>
             </div>
