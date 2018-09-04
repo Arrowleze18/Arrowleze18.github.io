@@ -15,10 +15,44 @@
     <link rel="stylesheet" href="css/phone.css">
     <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/desktop.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".toggler").click(function () {
+                $(".menu").slideToggle();
+                $(".toggler").toggleClass("togglerX");
+            });
+
+            $(window).resize(function () { //相當於@media解析度>600的功能
+                let w = $(this).width();
+                console.log(w);
+                if (w > 800) {
+                    $(".toggler").hide();
+                    $(".menu").show();
+                } else {
+                    $(".toggler").show();
+                    $(".menu").hide();
+                    $(".toggler").removeClass("togglerX");
+                }
+            });
+
+            $(window).scroll(function(){
+                let h = $("html,body").scrollTop();
+                if(h >500)
+                {
+                    $("#gotop").fadeIn(1000);
+                }else
+                {
+                    $("#gotop").fadeOut(1000);
+                }
+            });
+        });
+    </script>
+
 </head>
 
 <body>
-    <nav>
+    <nav class="clearfix">
         <div class="full-width">
             <div class="fixed-width clearfix">
                 <div class="col-12 nopa">
@@ -26,6 +60,9 @@
                         <div class="logo">
                             <img src="images/LOGO.png" alt="LOGO">
                         </div>
+                    </div>
+                    <div class="toggler">
+                        <span></span>
                     </div>
                     <div class="col-9">
                         <div class="menu">
@@ -49,6 +86,7 @@
             </div>
         </div>
     </nav>
+    <a href="#" id="gotop">TOP</a>
     <header>
         <div class="full-width">
             <div class="fixed-width">

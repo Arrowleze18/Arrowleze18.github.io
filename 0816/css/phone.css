@@ -1,50 +1,65 @@
 @media screen and (max-width:600px) {
+
     /*GLOBAL*/
     .fixed-width {
         width: 80%;
         margin: auto;
     }
+
     .col-1 {
         width: calc(100% / 12 * 1);
     }
+
     .col-2 {
         width: calc(100% / 12 * 2);
     }
+
     .col-3 {
         width: calc(100% / 12 * 3);
     }
+
     .col-4 {
         width: calc(100% / 12 * 4);
     }
+
     .col-5 {
         width: calc(100% / 12 * 5);
     }
+
     .col-6 {
         width: calc(100% / 12 * 6);
     }
+
     .col-7 {
         width: calc(100% / 12 * 7);
     }
+
     .col-8 {
         width: calc(100% / 12 * 8);
     }
+
     .col-9 {
         width: calc(100% / 12 * 9);
     }
+
     .col-10 {
         width: calc(100% / 12 * 10);
     }
+
     .col-11 {
         width: calc(100% / 12 * 11);
     }
+
     .col-12 {
         width: calc(100% / 12 * 12);
     }
+
     [class*="col"] {
         /* float: left; */
         padding: 50px;
         width: 100%;
     }
+
     body {
         /* background-color: #1C1C1C; */
         background-image: url(../images/bg.jpg);
@@ -55,32 +70,96 @@
         padding-top: 100px;
         padding-bottom: 100px;
     }
+
     /*NAV*/
     nav {
         line-height: 20px;
         margin: auto;
     }
+
     nav .fixed-width {
         background-color: #373C38;
     }
+
     nav .logo {
         height: 80px;
         width: auto;
         padding-left: 50px;
     }
+
     nav li {
         /* float: right; */
         padding: 15px 10px;
     }
+
     nav .menu {
         /* float: right; */
+        display: none;
         padding: 0 15px;
     }
+
     nav .menu a {
         text-decoration: none;
         color: cornsilk;
         font-size: 14px;
     }
+
+    nav .toggler {
+        display: block;
+        margin: auto;
+        width: 60px;
+        height: 60px;
+        background-color: #333;
+        position: relative;
+    }
+
+    nav .toggler span {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 25px;
+        margin: auto;
+        height: 2px;
+        background-color: rgb(164, 209, 112);
+        transition: all 1s;
+    }
+
+    nav .toggler span::before {
+        content: "";
+        width: 25px;
+        height: 2px;
+        position: absolute;
+        bottom: 10px;
+        background-color: rgb(164, 209, 112);
+        transition: all .6s;
+    }
+
+    nav .toggler span::after {
+        content: "";
+        width: 25px;
+        height: 2px;
+        position: absolute;
+        top: 10px;
+        background-color: rgb(164, 209, 112);
+        transition: all .6s;
+    }
+
+    nav .togglerX span {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    nav .togglerX span::before {
+        bottom: 0px;
+        transform: rotate(45deg);
+    }
+
+    nav .togglerX span::after {
+        top: 0px;
+        transform: rotate(-45deg);
+    }
+
     /*HEADER*/
     header .fixed-width {
         padding-bottom: 100px;
@@ -90,10 +169,12 @@
         justify-content: center;
         text-align: center;
     }
+
     header img {
         margin: auto;
         width: 200px;
     }
+
     /*SECTION1*/
     #section1 .col-5 {
         padding: 110px 50px;
@@ -103,18 +184,22 @@
         color: rgb(222, 223, 222);
         background-image: url(../images/lightbg.jpg);
     }
+
     #section1 h4 {
         color: #86C166;
     }
+
     #section1 .greenline {
         color: #86C166;
     }
+
     #section1 .col-4 img {
         padding-top: 50px;
         padding-bottom: 50px;
         /* float: left; */
         width: 100px;
     }
+
     #section1 .col-7 {
         display: flex;
         align-items: center;
@@ -122,10 +207,12 @@
         text-align: center;
         background-color: cornflowerblue;
     }
+
     #section1 .col-7 img {
         width: auto;
         height: 461px;
     }
+
     /*SECTION2*/
     #section2 .col-4 {
         padding: 70px 50px;
@@ -135,20 +222,25 @@
         color: rgb(222, 223, 222);
         background-image: url(../images/lightbg.jpg);
     }
+
     #section2 .col-4 .col-12 img {
         margin: auto;
         width: 100px;
         padding-bottom: 11px;
     }
+
     #section2 .lead2 {
         padding-top: 20px;
     }
+
     #section2 h4 {
         color: #86C166;
     }
+
     #section2 .greenline {
         color: #86C166;
     }
+
     #section2 .col-8 {
         display: flex;
         align-items: center;
@@ -156,10 +248,12 @@
         text-align: center;
         background-color: #F17C67;
     }
+
     #section2 .col-8 img {
         width: 100%;
         height: auto;
     }
+
     /*SECTION3*/
     #section3 .col-5 {
         padding: 101px 50px;
@@ -169,18 +263,22 @@
         color: rgb(222, 223, 222);
         background-image: url(../images/lightbg.jpg);
     }
+
     #section3 h4 {
         color: #86C166;
     }
+
     #section3 .greenline {
         color: #86C166;
     }
+
     #section3 .col-5 img {
         padding-top: 50px;
         padding-bottom: 50px;
         margin: auto;
         width: 100px;
     }
+
     #section3 .col-7 {
         display: flex;
         align-items: center;
@@ -188,54 +286,65 @@
         text-align: center;
         background-color: rgb(63, 128, 79);
     }
+
     #section3 .col-7 img {
         width: 100%;
         height: auto;
     }
+
     /*FULLPIC*/
     #fullpic img {
         width: 100%;
         height: auto;
         display: block;
     }
+
     /*FOOTER*/
     footer .fixed-width {
         background-color: #373C38;
     }
+
     footer .col-6 {
         text-align: center;
         /* float: left; */
     }
+
     footer .info {
         /* float: left; */
         line-height: 20px;
         color: rgb(222, 223, 222);
     }
+
     footer .phone {
         padding-top: 20px;
     }
+
     footer .greenline {
         color: #86C166;
         padding-bottom: 20px;
     }
-    footer .icons
-    {
+
+    footer .icons {
         margin-top: 150px;
         padding-bottom: 50px;
         margin: auto;
     }
+
     footer .icon {
         /* float: right; */
         margin: auto;
     }
+
     footer ul {
         padding-right: 100px;
         padding-bottom: 50px;
     }
+
     footer li {
         float: right;
         padding-left: 15px;
     }
+
     footer a {
         color: #86C166;
     }

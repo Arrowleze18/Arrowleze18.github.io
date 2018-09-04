@@ -15,6 +15,45 @@
     <link rel="stylesheet" href="css/storyboard-phone.css">
     <link rel="stylesheet" href="css/storyboard-tablet.css">
     <link rel="stylesheet" href="css/storyboard.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let index = 0;
+            let picwidth = 800;
+            let pic = $(".pic");
+            let picNums = pic.length;
+            let timeOut = 3000;
+            let speed = 800;
+
+            $(".wrapper").css("width", picwidth * picNums);
+
+            function move() {
+                $(".wrapper").animate({
+                    marginLeft: picwidth * (-index)
+                }, speed);
+            };
+
+            function cycle() {
+                if (index == picNums - 1) {
+                    index = 0;
+                } else {
+                    index++;
+                }
+                move();
+            };
+
+            setInterval(cycle, timeOut);
+
+            $(window).scroll(function () {
+                let h = $("html,body").scrollTop();
+                if (h > 500) {
+                    $("#gotop").fadeIn(1000);
+                } else {
+                    $("#gotop").fadeOut(1000);
+                }
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -49,6 +88,45 @@
             </div>
         </div>
     </nav>
+    <a href="#" id="gotop">TOP</a>
+    <div id="slider">
+        <div class="fixed-width">
+            <div class="wrapper">
+                <div class="pic">
+                    <img src="images/01.png" alt="pic1">
+                </div>
+                <div class="pic">
+                    <img src="images/02.png" alt="pic2">
+                </div>
+                <div class="pic">
+                    <img src="images/03.png" alt="pic3">
+                </div>
+                <div class="pic">
+                    <img src="images/04.png" alt="pic4">
+                </div>
+                <div class="pic">
+                    <img src="images/05.png" alt="pic5">
+                </div>
+                <div class="pic">
+                    <img src="images/06.png" alt="pic6">
+                </div>
+                <div class="pic">
+                    <img src="images/07.png" alt="pic7">
+                </div>
+                <div class="pic">
+                    <img src="images/08.png" alt="pic8">
+                </div>
+                <div class="pic">
+                    <img src="images/09.png" alt="pic9">
+                </div>
+                <div class="pic">
+                    <img src="images/10.png" alt="pic10">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
     <div id="story">
         <div class="full-width">
             <div class="fixed-width clearfix">
