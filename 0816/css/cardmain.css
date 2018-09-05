@@ -119,6 +119,16 @@
         margin: auto;
         width: 500px;
     }
+    #pics .long
+    {
+        width: 300px;
+        height: auto;
+        overflow: hidden;
+    }
+    #pics .long img
+    {
+        width: 100%;
+    }
 
     #pics #big {
         border: #00AA90 1px solid;

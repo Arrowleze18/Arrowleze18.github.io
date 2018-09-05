@@ -29,16 +29,20 @@
                     $("#gotop").fadeOut(1000);
                 }
             });
-            $(window).resize(function(){
+            $(window).resize(function () {
                 let w = $(this).width();
-                if(w < 600)
-                {
+                if (w < 600) {
                     $("#big").hide();
-                }else
-                {
+                } else {
                     $("#big").show();
                 }
             });
+
+            lightbox.option({
+                'resizeDuration': 200,
+                'wrapAround': true,
+                "albumLabel": "第 %1 張，共 %2 張"
+            })
         });
     </script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
@@ -50,6 +54,9 @@
     <link rel="stylesheet" href="css/cardphone.css">
     <link rel="stylesheet" href="css/cardtablet.css">
     <link rel="stylesheet" href="css/cardmain.css">
+    <link rel="stylesheet" href="dist/css/lightbox.css">
+    <script src="dist/js/lightbox.min.js"></script>
+
 </head>
 
 <body>
@@ -97,35 +104,53 @@
             <div class="fixed-width clearfix">
                 <div class="col-12">
                     <div class="col-4 long">
-                        <img class="zoom" src="images/2014聖誕節.jpg" alt="2014xmas" data-img="2014聖誕節.jpg">
+                        <a href="images/2014聖誕節.jpg" data-lightbox="q" data-title="2014聖誕節">
+                            <img class="zoom" src="images/2014聖誕節.jpg" alt="2014xmas" data-img="2014聖誕節.jpg">
+                        </a>
                     </div>
                     <div class="col-4 long">
-                        <img class="zoom" src="images/2015聖誕節.png" alt="2015xmas" data-img="2015聖誕節.png">
+                        <a href="images/2015聖誕節.png" data-lightbox="q" data-title="2015聖誕節">
+                            <img class="zoom" src="images/2015聖誕節.png" alt="2015xmas" data-img="2015聖誕節.png">
+                        </a>
                     </div>
                     <div class="col-4 long">
-                        <img class="zoom" src="images/2016 christmas02.png" alt="2016xmas" data-img="2016 christmas02.png">
+                        <a href="images/2016 christmas02.png" data-lightbox="q" data-title="2016聖誕節">
+                            <img class="zoom" src="images/2016 christmas02.png" alt="2016xmas" data-img="2016 christmas02.png">
+                        </a>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="col-4">
-                        <img class="zoom" src="images/2017中秋節.jpg" alt="2017middlemoon" data-img="2017中秋節.jpg">
+                        <a href="images/2017中秋節.jpg" data-lightbox="q" data-title="2017中秋節">
+                            <img class="zoom" src="images/2017中秋節.jpg" alt="2017middlemoon" data-img="2017中秋節.jpg">
+                        </a>
                     </div>
                     <div class="col-4">
-                        <img class="zoom" src="images/2017聖誕節卡片CLIP-PNG.png" alt="2017xmas" data-img="2017聖誕節卡片CLIP-PNG.png">
+                        <a href="images/2017聖誕節卡片CLIP-PNG.png" data-lightbox="q" data-title="2017聖誕節">
+                            <img class="zoom" src="images/2017聖誕節卡片CLIP-PNG.png" alt="2017xmas" data-img="2017聖誕節卡片CLIP-PNG.png">
+                        </a>
                     </div>
                     <div class="col-4">
-                        <img class="zoom" src="images/2017萬聖節(2018製).png" alt="2018holloween" data-img="2017萬聖節(2018製).png">
+                        <a href="images/2017萬聖節(2018製).png" data-lightbox="q" data-title="2017萬聖節">
+                            <img class="zoom" src="images/2017萬聖節(2018製).png" alt="2018holloween" data-img="2017萬聖節(2018製).png">
+                        </a>
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="col-4">
-                        <img class="zoom" src="images/2018情人節.png" alt="2018valentine" data-img="2018情人節.png">
+                        <a href="images/2018情人節.png" data-lightbox="q" data-title="2018情人節">
+                            <img class="zoom" src="images/2018情人節.png" alt="2018valentine" data-img="2018情人節.png">
+                        </a>
                     </div>
                     <div class="col-4">
-                        <img class="zoom" src="images/2018新年賀卡.png" alt="2018new" data-img="2018新年賀卡.png">
+                        <a href="images/2018新年賀卡.png" data-lightbox="q" data-title="2018新年賀卡">
+                            <img class="zoom" src="images/2018新年賀卡.png" alt="2018new" data-img="2018新年賀卡.png">
+                        </a>
                     </div>
                     <div class="col-4">
-                        <img class="zoom" src="images/2018端午節.png" alt="2018green" data-img="2018端午節.png">
+                        <a href="images/2018端午節.png" data-lightbox="q" data-title="2018端午節">
+                            <img class="zoom" src="images/2018端午節.png" alt="2018green" data-img="2018端午節.png">
+                        </a>
                     </div>
                 </div>
             </div>
