@@ -54,6 +54,19 @@
         padding-top: 100px;
         padding-bottom: 100px;
     }
+    #gotop {
+        display: none;
+        width: 40px;
+        height: 40px;
+        background-color: #86C166;
+        color: #373C38;
+        text-align: center;
+        line-height: 40px;
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        text-decoration: none;
+    }
     /*NAV*/
     nav {
         line-height: 20px;

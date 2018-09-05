@@ -18,6 +18,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
+
             let index = 0;
             let picwidth = 800;
             let pic = $(".pic");
@@ -50,6 +51,16 @@
                     $("#gotop").fadeIn(1000);
                 } else {
                     $("#gotop").fadeOut(1000);
+                }
+            });
+            $(window).resize(function(){
+                let w = $(this).width();
+                if(w > 1200)
+                {
+                    $("#slider").show();
+                }else
+                {
+                    $("#slider").hide();
                 }
             });
         });

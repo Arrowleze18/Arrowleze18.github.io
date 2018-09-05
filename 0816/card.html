@@ -29,6 +29,16 @@
                     $("#gotop").fadeOut(1000);
                 }
             });
+            $(window).resize(function(){
+                let w = $(this).width();
+                if(w < 600)
+                {
+                    $("#big").hide();
+                }else
+                {
+                    $("#big").show();
+                }
+            });
         });
     </script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
