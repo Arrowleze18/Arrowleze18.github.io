@@ -118,17 +118,26 @@
 
     /*SLIDER*/
     #slider {
-        width: 800px;
+        width: 1000px;
         height: 450px;
         margin: auto;
+        background-color: #373C38;
         overflow: hidden;
     }
 
     #slider .wrapper {
+        width: 800px;
+    }
+    #slider .fixed-width
+    {
         background-color: #373C38;
+        width: 800px!important;
+        margin: auto;
+        overflow: hidden;
     }
 
     #slider .pic {
+        overflow: hidden;
         float: left;
     }
 
