@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/cwtexyen.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contact_phone.css">
+    <link rel="stylesheet" href="css/contact_tablet.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            let index = 0;
+            let picwidth = 800;
+            let pic = $(".pic");
+            let picNums = pic.length;
+            let timeOut = 3000;
+            let speed = 800;
+
+            $(".wrapper").css("width", picwidth * picNums);
+
+            function move() {
+                $(".wrapper").animate({
+                    marginLeft: picwidth * (-index)
+                }, speed);
+            };
+
+            function cycle() {
+                if (index == picNums - 1) {
+                    index = 0;
+                } else {
+                    index++;
+                }
+                move();
+            };
+
+            setInterval(cycle, timeOut);
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="clearfix">
+        <div class="full-width">
+            <div class="fixed-width clearfix">
+                <div class="col-12 nopa">
+                    <div class="col-3">
+                        <div class="logo">
+                            <img src="images/LOGO.png" alt="LOGO">
+                        </div>
+                    </div>
+                    <div class="toggler">
+                        <span></span>
+                    </div>
+                    <div class="col-9">
+                        <div class="menu">
+                            <ul>
+                                <li>
+                                    <a href="#">CONTACT</a>
+                                </li>
+                                <li>
+                                    <a href="../0816/card.html">CARD</a>
+                                </li>
+                                <li>
+                                    <a href="../0816/storyboard.html">STORYBOARD</a>
+                                </li>
+                                <li>
+                                    <a href="../0816/index.html">MAIN</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="slider-for">
+        <div class="fixed-width clearfix">
+            <div class="wrapper clearfix">
+                <div class="pic">
+                    <img src="images/封面_01.png">
+                </div>
+                <div class="pic">
+                    <img src="images/目錄_01.png">
+                </div>
+                <div class="pic">
+                    <img src="images/章節1_專案_01.png">
+                </div>
+                <div class="pic">
+                    <img src="images/專案_舞動人偶01_01.png">
+                </div>
+                <div class="pic">
+                    <img src="images/專案_舞動人偶02_01.png">
+                </div>
+                <div class="pic">
+                    <img src="images/專案_舞動人偶03_01.png">
+                </div>
+                <div class="pic">
+                    <img src="images/專案_舞動人偶04_01.png">
+                </div>
+                <div class="pic">
+                    <img src="images/專案_舞動人偶05_01.png">
+                </div>
+                <div class="pic">
+                    <img src="images/專案_舞動人偶06_01.png">
+                </div>
+                <div class="pic">
+                    <img src="images/章節2_其他作品_01.png">
+                </div>
+                <div class="pic">
+                    <img src="images/專案_拼圖01_01.png">
+                </div>
+                <div class="pic">
+                    <img src="images/專案_拼圖02_01.png">
+                </div>
+                <div class="pic">
+                    <img src="images/專案_拼圖03_01.png">
+                </div>
+                <div class="pic">
+                    <img src="images/專案_拼圖04_01.png">
+                </div>
+                <div class="pic">
+                    <img src="images/專案_拼圖05_01.png">
+                </div>
+                <div class="pic">
+                    <img src="images/專案_拼圖06_01.png">
+                </div>
+                <div class="pic">
+                    <img src="images/專案_拼圖07_01.png">
+                </div>
+                <div class="pic">
+                    <img src="images/專案_拼圖08_01.png">
+                </div>
+                <div class="pic">
+                    <img src="images/專案_扭蛋機01_01.png">
+                </div>
+                <div class="pic">
+                    <img src="images/專案_扭蛋機02_01.png">
+                </div>
+                <div class="pic">
+                    <img src="images/專案_扭蛋機03_01.png">
+                </div>
+                <div class="pic">
+                    <img src="images/專案_扭蛋機04_01.png">
+                </div>
+                <div class="pic">
+                    <img src="images/專案_扭蛋機05_01.png">
+                </div>
+                <div class="pic">
+                    <img src="images/封底_01.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="fixed-width">
+            <div class="ICON">
+                <a href="https://www.facebook.com/YenHsinJen">
+                    <img src="images/ICON更正版.png" alt="fblink">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</body>
+
+</html>
