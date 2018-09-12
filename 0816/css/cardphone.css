@@ -78,7 +78,8 @@
     nav .logo {
         height: 80px;
         width: auto;
-        padding-left: 50px;
+        /* padding-left: 50px; */
+        margin: auto;
     }
     nav li {
         /* float: right; */
@@ -102,8 +103,9 @@
         background-color: #373C38;
     }
     #pics .col-4 {
-        padding: 0px 20px;
-        width: 200px;
+        padding: 0px 10px;
+        margin: auto;
+        width: 150px;
     }
     #pics img {
         border: #00AA90 1px solid;
