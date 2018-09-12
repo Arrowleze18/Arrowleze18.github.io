@@ -103,12 +103,13 @@
     }
     #pics .col-4 {
         padding: 0px 20px;
-        width: 300px;
+        width: 200px;
     }
     #pics img {
         border: #00AA90 1px solid;
-        width: 250px;
+        width: 150px;
         padding: 5px;
+        margin: auto;
     }
     /*FOOTER*/
     footer .fixed-width {
